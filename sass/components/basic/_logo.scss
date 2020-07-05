@@ -1,0 +1,19 @@
+.logo-link {
+  display: inline-block;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  margin-right: 85px;
+
+  &-first-word {
+    color: $accent-color;
+  }
+}

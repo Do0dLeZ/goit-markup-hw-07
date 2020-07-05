@@ -1,0 +1,42 @@
+.background-container {
+  background-color: $section-background-color;
+}
+
+.item-teamate {
+  width: 270px;
+  height: 422px;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: $card-background-primery-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.teamate-img {
+  .item-teamate & {
+    margin-bottom: 30px;
+  }
+}
+
+%employee-txt {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.employee-name {
+  @extend %employee-txt;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.employee-status {
+  @extend %employee-txt;
+  color: $text-color-secondary;
+  margin-bottom: 16px;
+}

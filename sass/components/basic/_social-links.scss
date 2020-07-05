@@ -1,0 +1,40 @@
+.section-list.social-list {
+  width: 206px;
+  height: 44px;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  .social-link:hover &,
+  .social-link:focus {
+    --color3: #ffffff;
+  }
+}
+
+.item-social-network:not(:last-child) {
+  margin-right: 10px;
+}

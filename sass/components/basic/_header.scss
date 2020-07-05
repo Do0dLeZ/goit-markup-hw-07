@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  padding: 0 15px;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:hover,
+  &focus {
+    color: $accent-color;
+    position: relative;
+  }
+
+  .navigation &:hover::after,
+  .navigation &:focus::after {
+    @extend %navigation-divider;
+  }
+
+  &.contact {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.active-page {
+  color: $accent-color;
+  position: relative;
+
+  &::after {
+    @extend %navigation-divider;
+  }
+}
+
+.nav-list,
+.contacts-list {
+  display: flex;
+}
+
+.icon-contact {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+
+  .nav-link.contact:hover &,
+  .nav-link.contact:focus & {
+    --color5: #2196f3;
+  }
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contscts-item:not(:last-child) {
+  margin-right: 30px;
+}

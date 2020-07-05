@@ -1,0 +1,43 @@
+.section-advantage {
+  &.section {
+    padding-bottom: 0;
+  }
+}
+
+.item-advantage {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantage-icon-wrapper {
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--prime-card-background-color);
+
+  margin-bottom: 30px;
+
+  position: relative;
+
+  @extend %flex-center;
+}
+
+.advantage-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantage-title {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantage-txt {
+  font-weight: normal;
+  line-height: 24px;
+  color: $text-color-secondary;
+}

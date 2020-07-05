@@ -1,0 +1,36 @@
+@import "./utils/veriables";
+@import "./utils/fonts";
+@import "./utils/normalizer";
+
+// base 
+
+@import "./components/basic/base";
+@import "./components/basic/logo";
+@import "./components/basic/social-links";
+@import "./utils/visibility";
+
+// placeholders
+
+@import "./components/placeholders/nav";
+@import "./components/placeholders/flex-center";
+
+// header & footer
+
+@import "./components/basic/header";
+@import "./components/basic/footer";
+
+// index
+
+@import "./components/index/hero";
+@import "./components/index/s-advantage";
+@import "./components/index/s-what-we-do";
+@import "./components/index/s-our-team";
+@import "./components/index/s-clients";
+
+// portfolio
+
+@import "./components/portfolio/s-filter";
+@import "./components/portfolio/s-portfolio";
+
+// modal
+@import "./components/basic/modal-order";

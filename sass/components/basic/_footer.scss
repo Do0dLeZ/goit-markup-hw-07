@@ -1,0 +1,130 @@
+.footer-background {
+  background-color: $footer-background-color;
+}
+
+.footer {
+  height: 252px;
+  color: $footer-primery-color;
+  display: flex;
+}
+
+.logo-link {
+  .footer & {
+    color: $footer-secondary-color;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-address {
+  padding-top: 60px;
+  margin-right: 69px;
+}
+
+.footer-info {
+  padding-top: 72px;
+  margin-right: 94px;
+}
+
+.footer-item-title {
+  font-weight: bold;
+  color: $title-primery-color;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.adress {
+  color: $footer-secondary-color;
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 9px;
+  color: $footer-primery-color;
+}
+
+.footer-icon {
+  &.item-social-network {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $footer-social-background-color;
+  }
+}
+
+.social-icon {
+  .footer-icon & {
+    --color3: white;
+  }
+}
+
+.footer-form-wrapper {
+  padding-top: 72px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-email {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--footer-secondary-color);
+  }
+}
+
+.btn-send {
+  width: 200px;
+  height: 50px;
+
+  outline: none;
+  border: none;
+
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  @extend %flex-center;
+}
+
+.btn-txt {
+  margin-right: 10px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: $footer-secondary-color;
+}
+
+.send-icon {
+  width: 20px;
+  height: 20px;
+
+  align-self: center;
+}
